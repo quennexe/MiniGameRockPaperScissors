@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-image: url('asd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 20px;
+    margin: 15px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.scoreboard,
+.difficulty {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    width: 375px;
+    /* önceki 250px idi — %50 arttırıldı */
+    font-size: 1.2em;
+}
+
+#result {
+    font-size: 28px;
+    margin: 25px 0;
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+#reset-btn {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #ff5252;
+    color: #fff;
+    border-radius: 8px;
+}

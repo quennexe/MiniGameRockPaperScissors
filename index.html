@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taş Kağıt Makas</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <h1>Taş Kağıt Makas</h1>
+
+    <div class="difficulty">
+        <label for="difficulty-select">Zorluk:</label>
+        <select id="difficulty-select">
+      <option value="easy">Kolay</option>
+      <option value="normal" selected>Normal</option>
+      <option value="hard">Zor</option>
+    </select>
+    </div>
+
+    <button onclick="game('rock')">🪨 Taş</button>
+    <button onclick="game('paper')">📄 Kağıt</button>
+    <button onclick="game('scissors')">✂️ Makas</button>
+
+    <p id="user-choice"></p>
+    <p id="computer-choice"></p>
+    <p id="result"></p>
+
+    <div class="scoreboard">
+        <h2>Skor Tablosu</h2>
+        <p id="user-score">Sen: 0</p>
+        <p id="computer-score">Bilgisayar: 0</p>
+        <p id="ties">Beraberlik: 0</p>
+    </div>
+
+    <button id="reset-btn" onclick="resetGame()">🔁 Sıfırla</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
